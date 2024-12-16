@@ -65,7 +65,7 @@ function LoginApp () {
 					{ userCondition == "password is wrong" ? <p className = "error">password is wrong</p> : null }
 					<LoginButton myFunc={checkUser} />
 				</div>
-				<div><a href="#">Forget your password?</a></div>
+				<div><a href="forget_password.html">Forget your password?</a></div>
 				<div><p>You do not have an account? <a href="sign_up.html">Sign Up</a></p></div>
 			</div>
 		</div>
