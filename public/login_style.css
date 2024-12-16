@@ -1,0 +1,94 @@
+:root {
+	--clr-bg-in: rgb(47, 47, 47);
+	--clr-in: #dfdfdf;
+	--clr-hv-in: #595959;
+	--clr-in-div: #181818;
+	--clr-in-plc: #B4B4B8;
+	--clr-bn-bg: #21a2ff;
+}
+.containor{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@keyframes slid-up {
+	0% {margin-top: 100%}
+	100% {margin-top: 0%}
+}
+.input-content{
+	display:flex;
+	gap: 20px;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	max-width: 580px;
+	background-color: var(--clr-in-div);
+	padding-top: 64px;
+    padding-bottom: 64px;
+    border-radius: 25px;
+	animation-name: slid-up;
+	animation-duration: 0.9s;
+}
+.input-area{
+	width: 80%;
+	display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.login-input{
+	border: none;
+    border-radius: 100px;
+    height: 70px;
+    background-color: var(--clr-bg-in);
+    padding-left: 30px;
+	padding-right: 18px;
+    font-size: 20px;
+    color: var(--clr-in);
+    outline: none;
+	width: 90%;
+	transition: background-color 0.3s;
+}
+.login-input:hover {
+	background-color: var(--clr-hv-in);
+}
+::placeholder {
+	color: var(--clr-in-plc);
+}
+.input-button {
+	padding: 22px 0px;
+	border: none;
+	border-radius: 100px;
+	font-size: 16px;
+    background-color: var(--clr-bn-bg);
+    color: white;
+    font-weight: 900;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.input-button:hover {
+	background-color: white;
+	color: var(--clr-bn-bg);
+	transform: translateY(-5px);
+}
+h1 {
+	color: white;
+}
+a{
+	color: white;
+	transition: color 0.3s;
+}
+p{
+	color: var(--clr-in);
+}
+a:hover {
+	color: gray;
+}
+.error {
+	color: red;
+}
+
+
+
+
+
+

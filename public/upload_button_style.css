@@ -1,0 +1,23 @@
+:root {
+	--clr-upload-bt-bg: #21a2ff;
+}
+.upload_button_div {
+	display: flex;
+	justify-content: center;
+}
+.upload_button {
+	border: none;
+    padding: 14px 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+	background-color: var(--clr-upload-bt-bg);
+	color: white;
+	transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+.upload_button:hover {
+	color: var(--clr-upload-bt-bg);
+	background-color: white;
+	transform: translateY(-5px);
+}
+

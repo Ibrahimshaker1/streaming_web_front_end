@@ -1,0 +1,117 @@
+:root{
+	--clr-upload-file-bt: rgb(47, 47, 47);
+	--clr-upload-bt-div: #ECDFCC;
+	--clr-upload-bt: #dfdfdf;
+	--clr-upload-bt-hv: #595959;
+	--clr-submit-bt: #21a2ff;
+}
+.from_page{
+	display: flex;
+}
+
+.color_div {
+	width: 50%;
+	height: 100vh;
+	background: linear-gradient(300deg, #00bfff, #040404);
+	background-size: 180% 180%;
+	animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes form_div_anamation {
+	0% {
+		margin-left: 55%;
+	}
+	100% {
+		margin-left: none;
+	}
+}
+
+.form_div_contaner{
+	display: flex;
+	width: 50%;
+	justify-content: center;
+	animation-name: form_div_anamation;
+	animation-duration: 0.9s;
+}
+
+.from_div{
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+.upload_button_cont {
+	background-color: white;
+	border-radius: 4px;
+	padding: 0.5em;
+}
+
+.upload_file {
+	font-size: 17px;
+}
+.upload_file::file-selector-button {
+  font-weight: bold;
+  background-color: var(--clr-upload-file-bt);
+  color: var(--clr-upload-bt);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.upload_file::file-selector-button:hover {
+	background-color: var(--clr-upload-bt-hv);
+}
+
+.submit_button{
+	border: none;
+    padding: 14px 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+	background-color: var(--clr-submit-bt);
+	color: white;
+	transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.submit_button:hover {
+	color: var(--clr-upload-bt-bg);
+	background-color: white;
+	transform: translateY(-5px);
+}
+
+.p_back {
+	margin: 0px;
+    display: inline-block;
+    vertical-align: super;
+    margin-left: 5px
+}
+
+@media (max-width: 825px) {
+	.color_div {
+		display: none;
+	}
+	.from_page {
+		justify-content: center;
+		background: linear-gradient(300deg, #00bfff, #040404);
+		background-size: 180% 180%;
+		animation: gradient-animation 18s ease infinite;
+	}
+
+}
+

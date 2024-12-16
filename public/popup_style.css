@@ -1,0 +1,61 @@
+:root {
+	--clr-div-bg: #181818;		
+}
+
+@keyframes popup {
+	0% {
+		transform: scale(0);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+@keyframes popup-close {
+	0%{
+		transform: scale(1);
+	}
+	100%{
+		transform: scale(0);
+	}
+}
+
+.popup-div{
+	display: flex;
+	justify-content: center;
+	animation: popup 500ms;
+	background-color: var(--clr-div-bg);
+}
+
+.popup-div-close{
+	display: flex;
+	justify-content: center;
+	background-color: var(--clr-div-bg);
+	animation: popup-close 500ms;
+	transform: scale(0);
+}
+
+.popup-content{
+	display: flex;
+	flex-direction: column;
+	position: fixed;
+    background: var(--clr-div-bg);
+	border-radius: 25px;
+	padding: 20px 30px;
+	align-items: center;
+}
+.popup-text{
+	font-size: larger;
+}
+
+.close-btn{
+	align-self: self-end;
+    width: 30px;
+    height: 30px;
+    background: white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+

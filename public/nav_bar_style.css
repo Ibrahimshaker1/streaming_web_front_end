@@ -1,0 +1,70 @@
+:root {
+	--clr-login-bt-bg: rgba(255, 255, 255, .3);
+	--clr-login-bt-bg-hv: #21a2ff;
+}
+@keyframes color-change {
+	0% { background-color: #040404 }
+	10% { background-color: rgba(26, 0, 51, 0.85) }
+	20% { background-color: rgba(16, 20, 91, 0.85)}
+	30% { background-color: rgba(21, 56, 127, 0.85)}
+	40% { background-color: rgba(108, 138, 198, 0.85)}
+	50% { background-color: rgba(115, 166, 212, 0.85) }
+	60%{ background-color:rgba(152, 217, 235, 0.85)}
+	70% {  background-color:rgba(115, 166, 212, 0.85)}
+	80% {  background-color:rgba(76, 91, 154, 0.85)}
+	90% {  background-color:rgba(47, 48, 106, 0.85)}
+	100% { background-color: #040404 }
+}
+.web_name{
+	color: white;
+}
+.logo_img{
+	float: left;
+}
+.nav_bar_contanor_active{
+	display: flex;
+    padding: 30px;
+	justify-content: space-between;
+}
+.nav_bar_contanor{
+	opacity: 0.3;
+	display: flex;
+    padding: 30px;
+	justify-content: space-between;
+}
+
+.nav_login_bt{
+	font-size: 14px;
+	color: white;
+    padding: 14px 18px;
+    border: none;
+    text-align: center;
+    border-radius: 25px;
+	background-color: var(--clr-login-bt-bg);
+	transition: transform 0.3s, background-color 0.3s;
+}
+
+
+.nav_login_bt:hover{
+	background-color: var(--clr-login-bt-bg-hv);
+	transform: translateY(-5px);
+}
+p {
+	color: white;
+}
+.user_name_div{
+	display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user_icon_div{
+	transform: padding 0.3s;
+}
+.user_icon_div:hover{
+	padding: 6px;
+	border-radius: 28px;
+	animation-name: color-change;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;	
+}
+
