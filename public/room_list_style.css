@@ -1,0 +1,30 @@
+:root{
+	--clr-add-btn: rgba(255, 255, 255, .3);
+	--clr-add-btn-hv: #dfdfdf;
+}
+h3 {
+	color: white;
+	padding: 0px 33px;
+}
+.room-list{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding: 10px 30px;
+}
+.add-room-button{
+	height: 300px;
+	width: 200px;
+	background-color: var(--clr-add-btn);
+	border: none;
+	border-radius: 25px;
+	font-size: xxx-large;
+    font-weight: bold;
+    opacity: 0.8;
+	transition: background-color 0.9s, transform 0.9s;
+}
+.add-room-button:hover{
+	background-color: var(--clr-add-btn-hv);
+	transform: translateY(-5px);
+}
+
