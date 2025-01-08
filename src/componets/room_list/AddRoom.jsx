@@ -1,10 +1,12 @@
 import React from "react";
 
 
-function AddRoom() {
+function AddRoom(props) {
 	return (
 		<div>
-			<button className="add-room-button">+</button>	
+			<button className="add-room-button" onClick={ () => {
+				props.myFunc()
+			} }>+</button>	
 		</div>
 	);
 };

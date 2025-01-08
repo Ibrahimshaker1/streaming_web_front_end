@@ -1,10 +1,10 @@
 import React from "react";
 import AddRoom from "./AddRoom.jsx";
 
-function RoomList () {
+function RoomList (props) {
 	return (
 		<div className="room-list">
-			<AddRoom />
+			<AddRoom myFunc={props.buttonFunc}/>
 		</div>
 	)
 }

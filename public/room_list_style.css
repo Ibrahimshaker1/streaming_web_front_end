@@ -1,6 +1,11 @@
 :root{
 	--clr-add-btn: rgba(255, 255, 255, .3);
 	--clr-add-btn-hv: #dfdfdf;
+	--clr-bg-in: rgb(47, 47, 47);
+	--clr-in: #dfdfdf;
+	--clr-hv-in: #595959;
+	--clr-in-plc: #B4B4B8;
+	--clr-bn-bg: #21a2ff;
 }
 h3 {
 	color: white;
@@ -27,4 +32,45 @@ h3 {
 	background-color: var(--clr-add-btn-hv);
 	transform: translateY(-5px);
 }
-
+.room-popup-content{
+	width: 60%;	
+}
+.room-popup-selector{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.login-input{
+	border: none;
+    border-radius: 100px;
+    height: 70px;
+    background-color: var(--clr-bg-in);
+    padding-left: 30px;
+	padding-right: 18px;
+    font-size: 20px;
+    color: var(--clr-in);
+    outline: none;
+	width: 90%;
+	transition: background-color 0.3s;
+}
+.login-input:hover {
+	background-color: var(--clr-hv-in);
+}
+::placeholder {
+	color: var(--clr-in-plc);
+}
+.create-room-button {
+	padding: 22px 0px;
+	border: none;
+	border-radius: 100px;
+	font-size: 16px;
+    background-color: var(--clr-bn-bg);
+    color: white;
+    font-weight: 900;
+	width: inherit;
+	transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.create-room-button:hover {
+	background-color: white;
+	color: var(--clr-bn-bg);
+	transform: translateY(-5px);
+}
