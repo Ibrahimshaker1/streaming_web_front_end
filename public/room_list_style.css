@@ -7,15 +7,21 @@
 	--clr-in-plc: #B4B4B8;
 	--clr-bn-bg: #21a2ff;
 }
-h3 {
+h2 {
 	color: white;
 	padding: 0px 33px;
 }
 .room-list{
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 25px;
 	padding: 10px 30px;
+}
+@media (max-width: 825px) {
+	.room-list{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 .add-room-button{
 	height: 300px;
@@ -74,3 +80,26 @@ h3 {
 	color: var(--clr-bn-bg);
 	transform: translateY(-5px);
 }
+.error{
+	color: red;
+}
+#room_category{
+	margin-top: 20px;
+}
+.room-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+	background-color: gray;
+	padding: 0px 20px;
+    border-radius: 25px;
+	width: 335px;
+	height: 300px;
+}
+.card-foot{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+

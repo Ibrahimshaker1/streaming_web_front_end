@@ -4,6 +4,7 @@
 .upload_button_div {
 	display: flex;
 	justify-content: center;
+	padding-top: 10px;
 }
 .upload_button {
 	border: none;
