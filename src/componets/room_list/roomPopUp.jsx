@@ -54,12 +54,13 @@ function RoomPopup (props) {
 				if (resData == "Create Room Error") {
 					setCreateStatus(createStatus = "response error");
 				}else{
-					//save the room data in user session storage
+					// save the room data in user session storage
 					sessionStorage.setItem("room_id", resData.id)
 					sessionStorage.setItem("room_name", resData.name)
 					sessionStorage.setItem("room_category", resData.category)
 					sessionStorage.setItem("video_path", resData.vid_path)
-					// todo redirect the use to the room page
+					// redirect the use to the room page
+					location.replace("http://localhost:5173/room_page");
 				};
 			});
 		}else{

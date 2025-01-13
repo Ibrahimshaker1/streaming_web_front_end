@@ -26,9 +26,15 @@ function RoomList (props) {
 	}, []);
 
 	function renderRoomCards (roomObject) {
+		// save room id is sessionStorage
+		function saveRoomId() {
+			sessionStorage.setItem("room_id", roomObject.id);
+			location.replace("http://localhost:5173/room_page");
+		}
 		return (
 			<RoomCard name={roomObject.name} category={roomObject.category} roomId={roomObject.id}
-			roomCreator={roomObject.creator_name} key={roomObject.id}/>
+			roomCreator={roomObject.creator_name} joinFunc={saveRoomId} 
+			vidPath={roomObject.vid_path} key={roomObject.id}/>
 		);
 	};
 
