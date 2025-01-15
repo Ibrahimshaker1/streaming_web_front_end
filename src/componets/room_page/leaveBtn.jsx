@@ -1,13 +1,13 @@
 import React from "react";
 
-function leaveBtn() {
+function LeaveBtn() {
 	return (
 		<div className="leavBtn-div">
-		
+			<button className="leave-button">leave</button>	
 		</div>
 	);
 };
 
-export default leaveBtn
+export default LeaveBtn
 
 
