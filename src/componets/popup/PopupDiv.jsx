@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {NavBarLoginButton} from "../nav_bar/Buttons.jsx"
 import Logo from "../nav_bar/Logo.jsx"
 
-function LogInPopUp () {
+function LogInPopUp (props) {
 	var [popupActive, setPopupActive] = useState(true);
 	
 	function closeButton () {
@@ -15,11 +15,16 @@ function LogInPopUp () {
 				<div className="close-btn" onClick={ () => {closeButton()} }>&times;</div>
 				<Logo/>
 				<h1>Welcome to IBStreaming</h1>
-				<p className="popup-text">You can upload any video</p>
-				<p className="popup-text">you waint and whitch it with</p>
-				<p className="popup-text">friends in rooms ;-)</p>
-				<NavBarLoginButton />
-		</div>
+				<p className="popup-text">{props.data.lineOne}</p>
+				<p className="popup-text">{props.data.lineTwo}</p>
+				<p className="popup-text">{props.data.lineThree}</p>
+				{props.data.loginButton == "active" ? <NavBarLoginButton /> : 
+				<button className="ok-button" onClick={
+					() => {
+						location.replace("http://localhost:5173");
+					}
+				}>Ok</button>}
+			</div>
 		</div>
 	)
 }

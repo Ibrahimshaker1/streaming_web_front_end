@@ -1,5 +1,6 @@
 :root {
 	--clr-div-bg: #181818;		
+	--clr-btn-bg: #21a2ff;
 }
 
 @keyframes popup {
@@ -58,4 +59,18 @@
     text-align: center;
     border-radius: 50%;
 }
-
+.ok-button{
+	background-color: var(--clr-btn-bg);
+	color: white;
+	padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: medium;
+    font-weight: 700;
+	transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+.ok-button:hover{
+	color: var(--clr-btn-bg);
+	background-color: white;
+	transform: translateY(-5px);
+}

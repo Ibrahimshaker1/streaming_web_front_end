@@ -16,7 +16,7 @@ async function getRoomTextData () {
 	return resResult;
 };
 
-function RoomText () {
+function RoomText (props) {
 
 	let [textValue, setTextValue] = useState({});	
 	
@@ -31,7 +31,7 @@ function RoomText () {
 		<div className="room-text">
 			<h3 className="room-name">Room: {textValue.name}</h3>
 			<h3 className="creator-name">Creator: {textValue.creator_name}</h3>
-			<LeaveBtn />
+			<LeaveBtn socketObject={props.socketObject}/>
 		</div>
 	)	
 }

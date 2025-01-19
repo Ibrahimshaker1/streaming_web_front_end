@@ -21,7 +21,14 @@ root.render(
 			<NavBarApp myClass="nav_bar_contanor"/>
 		}
 		{ isAuthenticated() ? <RoomListApp /> : null }
-		{ isAuthenticated() ?  <UploadButton /> : <LogInPopUp/>}
+		{ isAuthenticated() ?  <UploadButton /> : <LogInPopUp data={
+			{
+				lineOne: "You can upload any video",
+				lineTwo: "you want and which it with",
+				lineThree: "frineds in rooms ;-)",
+				loginButton: "active"
+			}
+		}/>}
 	</div>
 )
 
