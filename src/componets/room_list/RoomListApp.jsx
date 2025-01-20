@@ -16,7 +16,6 @@ function RoomListApp () {
 
 	return (
 		<div className="room-list-app-div">
-			<h3>Rooms:</h3>
 			{roomListState == "list" ? <RoomList buttonFunc={addButtonClicked}/> : 
 				<RoomPopup myFunc={closeButtonClicked}/>
 			}

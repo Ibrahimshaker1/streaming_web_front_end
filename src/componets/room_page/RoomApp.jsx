@@ -39,7 +39,7 @@ function RoomApp() {
 					<NavBarApp myClass="nav_bar_contanor_active"/>
 					<p className="members-count" id="count">Members: </p>
 					<div className="room-app">
-						<VideoComp />
+						{userSocket && <VideoComp socketObject={userSocket}/>}
 						{userSocket && <ChatComp socketObject={userSocket}/>}
 					</div>
 					<RoomText socketObject={userSocket}/>

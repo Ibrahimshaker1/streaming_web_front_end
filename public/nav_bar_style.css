@@ -19,7 +19,7 @@
 	color: white;
 }
 .logo_img{
-	float: left;
+	width: 33px;
 }
 .nav_bar_contanor_active{
 	display: flex;
@@ -67,4 +67,15 @@ p {
 	animation-duration: 3s;
 	animation-iteration-count: infinite;	
 }
-
+.my-logo-div{
+	display: flex;
+}
+.web-name{
+	padding: 0px 5px;
+	margin: 0px;
+	align-self: center;
+	color: white;
+}
+.logo-link{
+	align-self: center;
+}
