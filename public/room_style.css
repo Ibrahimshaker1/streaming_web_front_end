@@ -44,6 +44,10 @@ h3{
     flex-direction: column;
     padding: 15px 90px;
 }
+.leavBtn-div{
+	display: flex;
+	gap: 15px;
+}
 .leave-button{
     padding: 10px;
     border: none;
@@ -133,3 +137,13 @@ h3{
     border-radius: 3px;
     padding: 0px 2px;
 }
+.mute-button{
+	color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+

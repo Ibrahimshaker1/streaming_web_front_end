@@ -35,12 +35,26 @@ function leaveButtonClicked (socketObject) {
 	};
 };
 
+function muteButtonCliked (e) {
+	const videoElement = document.getElementById("videoPlayer");
+	const btn = e.target
+	if (btn.innerText == "Unmute") {
+		videoElement.muted = false;
+		btn.innerText = "Mute";
+	}else if(btn.innerText == "Mute"){
+		videoElement.muted = true;
+		btn.innerText = "Unmute";
+	};
+};
+
 function LeaveBtn(props) {
 	return (
 		<div className="leavBtn-div">
 			<button className="leave-button" onClick={() => {
 				leaveButtonClicked(props.socketObject); 
 			}}>leave</button>	
+			{ localStorage.getItem("id") !== sessionStorage.getItem("room_id") ? 
+			<button className="mute-button" onClick={ (e) => {muteButtonCliked(e)} }>Unmute</button> : null}
 		</div>
 	);
 };
