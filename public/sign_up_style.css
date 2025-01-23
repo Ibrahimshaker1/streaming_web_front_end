@@ -120,13 +120,29 @@ img{
 	align-self: center;
 }
 .logo_img{
+	border-radius: 0px;
 	opacity: 1;
-	height: 60px;
-	width: 170px;
+	width: 33px;
+	height: auto;
 	transition: transform 0.3s;
 }
 .logo_img:hover{
 	transform: scale(0.9);
+}
+.my-logo-div{
+	display: flex;
+}
+.web-name{
+	padding: 0px 5px;
+	margin: 0px;
+	align-self: center;
+	color: white;
+}
+a{
+	text-decoration: none;
+}
+.logo-link{
+	align-self: center;
 }
 .sign-up-input-area{
 	display: flex;
