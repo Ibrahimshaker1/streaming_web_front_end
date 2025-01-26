@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 
 function addMessage(socketMessage) {
-	const colorList = ["4635B1", "B771E5", "AEEA94", "FFFBCA", "155E95", "6A80B9", "EFB6C8"];
+	const colorList = ["4635B1", "B771E5", "AEEA94", "155E95", "6A80B9"];
 	const randomNumber = Math.floor(Math.random() * colorList.length)
 	if (socketMessage.roomId == sessionStorage.getItem("room_id")){
 		const chatLogDiv = document.getElementById("chat-log");
