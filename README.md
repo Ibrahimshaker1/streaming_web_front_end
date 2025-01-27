@@ -28,4 +28,4 @@ Tech Stack
 
 - Join & Interact: Other users can join rooms to watch the video and engage through real-time chat.
 ## YouTube Video
-[![The web video on youtube]](https://www.youtube.com/watch?v=bTJ9QlCoHm0)
+[The web video on youtube](https://www.youtube.com/watch?v=bTJ9QlCoHm0)
