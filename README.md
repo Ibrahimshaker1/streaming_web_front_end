@@ -1,8 +1,29 @@
-# React + Vite
+# Full-Stack Video Streaming Web App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Overview
 
-Currently, two official plugins are available:
+I’ve developed a full-stack video streaming web app that combines functionality, performance, and a seamless user experience. Here's a quick overview of the tech stack and features:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech Stack
+
+## Backend
+
+### Built with Node.js, utilizing two separate servers for optimal performance:
+
+- A REST API server for handling user authentication (login/signup), video uploads, and room management.
+
+- A WebSocket server for enabling real-time chat functionality within streaming rooms.
+
+## Frontend
+
+- Created using React.js for a dynamic and user-friendly interface.
+
+## Features
+
+- User Authentication: Secure login and signup functionality.
+
+- Video Uploading: Users can upload videos directly from the app.
+
+- Room Creation: Users can create a room, select an uploaded video, and start streaming it.
+
+- Join & Interact: Other users can join rooms to watch the video and engage through real-time chat.
